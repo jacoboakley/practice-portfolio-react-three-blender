@@ -1,13 +1,11 @@
-.footer {
+.body {
   position: absolute;
-  top: 95%;
+  top: 10%;
 
   align-items: center;
   display: flex;
   justify-content: space-around;
 
-  height: 5%;
+  height: 85%;
   width: 100%;
-
-  background: rgba(44, 62, 80, .25);
 }

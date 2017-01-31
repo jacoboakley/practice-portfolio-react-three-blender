@@ -11,7 +11,11 @@ class Header extends React.Component {
             <li>Front-end Developer </li>
           </ul>
         </div>
-          <p>links here</p>
+        <ul className='link'>
+          <li><a href='#'>About Me</a></li>
+          <li><a href='#'>My Skills</a></li>
+          <li><a href='#'>My Work</a></li>
+        </ul>
       </div>
     )
   }

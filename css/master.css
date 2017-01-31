@@ -1,5 +1,6 @@
 @import url(header.css);
 @import url(footer.css);
+@import url(body.css);
 
 html, body {
   margin: 0;
@@ -12,15 +13,22 @@ html, body {
   color: white;
 }
 
-/* BODY STYLES */
-.body {
-  position: absolute;
-  top: 10%;
-
-  align-items: center;
+.link {
   display: flex;
-  justify-content: space-around;
+  list-style-type: none;
+}
 
-  height: 75%;
-  width: 100%;
+.link li {
+  padding: .75rem;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+  text-shadow: 0em 0em 1em #d35400;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
 }
