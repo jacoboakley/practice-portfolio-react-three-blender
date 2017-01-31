@@ -1,0 +1,26 @@
+@import url(header.css);
+@import url(footer.css);
+
+html, body {
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+  width: 100%;
+
+  background: black;
+  color: white;
+}
+
+/* BODY STYLES */
+.body {
+  position: absolute;
+  top: 10%;
+
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+
+  height: 75%;
+  width: 100%;
+}

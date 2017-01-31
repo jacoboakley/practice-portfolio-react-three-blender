@@ -1,0 +1,31 @@
+.footer {
+  position: absolute;
+  top: 85%;
+
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+
+  height: 15%;
+  width: 100%;  
+}
+
+.footer .link {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer .link li {
+  padding: .75rem;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  text-shadow: 0em 0em 1em #d35400;
+}
+
+.footer a:hover {
+  font-style: italic;
+  text-decoration: underline;
+}

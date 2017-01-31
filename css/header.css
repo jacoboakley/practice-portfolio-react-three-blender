@@ -1,0 +1,27 @@
+.header {
+  position: absolute;
+
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+
+  height: 10%;
+  width: 100%;
+
+  color: #ccc;
+}
+
+.header .title img {
+  border-radius: 15%;
+  height: 75px;
+}
+
+.header .title {
+  align-items: center;
+  display: flex;
+}
+
+.header .title ul {
+  list-style-type: none;
+  padding-left: .5em;
+}
