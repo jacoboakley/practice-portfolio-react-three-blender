@@ -2,10 +2,10 @@
   position: absolute;
   top: 10%;
 
+  height: 85%;
+  width: 100%;
+
   align-items: center;
   display: flex;
   justify-content: space-around;
-
-  height: 85%;
-  width: 100%;
 }
