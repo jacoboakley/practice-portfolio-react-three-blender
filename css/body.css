@@ -4,8 +4,30 @@
 
   height: 85%;
   width: 100%;
+}
+
+.about {
+  height: 100%;
+  width: 100%;
+
+  border: 1px solid red;
+}
+
+.skills {
+  height: 100%;
+  width: 100%;
+
+  border: 1px solid red;
+}
+
+.gallery {
+  height: 100%;
+  width: 100%;
+
+  border: 1px solid red;
 
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
