@@ -8,22 +8,15 @@
   height: 10%;
   width: 100%;
 
-  background: rgba(44, 62, 80, .25);
-
-  color: #ccc;
+  background: rgba(44, 62, 80, .5);
 }
 
-.header .title img {
-  border-radius: 15%;
-  height: 75px;
+.header p {
+  margin: 0;
+
+  font-weight: 700;
 }
 
-.header .title {
-  align-items: center;
-  display: flex;
-}
-
-.header .title ul {
-  list-style-type: none;
-  padding-left: .5em;
+.header a {
+  padding: 1rem;
 }

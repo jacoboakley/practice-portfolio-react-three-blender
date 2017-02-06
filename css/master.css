@@ -11,6 +11,7 @@ html, body {
 
   background: black;
   color: white;
+  font-size: 3vmin;
 }
 
 .link {
@@ -23,7 +24,7 @@ html, body {
 }
 
 a {
-  color: #ccc;
+  color: white;
   text-decoration: none;
   text-shadow: 0em 0em 1em #d35400;
 }

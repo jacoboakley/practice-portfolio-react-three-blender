@@ -10,8 +10,19 @@
   height: 100%;
   width: 100%;
 
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+
   border: 1px solid red;
 }
+
+.about p {
+  width: 75%;
+}
+
 
 .skills {
   height: 100%;
