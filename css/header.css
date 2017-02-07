@@ -1,5 +1,6 @@
 .header {
   position: absolute;
+  z-index: 1;
 
   align-items: center;
   display: flex;
@@ -8,7 +9,8 @@
   height: 10%;
   width: 100%;
 
-  background: rgba(44, 62, 80, .5);
+  background: rgba(127, 140, 141, .5);
+  box-shadow: 0rem 0rem 1rem white;
 }
 
 .header p {

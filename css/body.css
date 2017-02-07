@@ -4,6 +4,8 @@
 
   height: 85%;
   width: 100%;
+
+  transition-duration: 2s;
 }
 
 .about {
@@ -15,8 +17,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: justify;
-
-  border: 1px solid red;
 }
 
 .about p {
@@ -28,17 +28,26 @@
   height: 100%;
   width: 100%;
 
-  border: 1px solid red;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  background: green;
 }
 
 .gallery {
+  padding-top: 1rem;
+
   height: 100%;
   width: 100%;
-
-  border: 1px solid red;
 
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.gallery iframe {
+  height: 40%;
+  width: 40%;
 }

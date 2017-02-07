@@ -9,9 +9,11 @@ html, body {
   height: 100%;
   width: 100%;
 
-  background: black;
+  background: rgba(44, 62, 80, 1);
   color: white;
   font-size: 3vmin;
+
+  overflow: hidden;
 }
 
 .link {
@@ -26,7 +28,6 @@ html, body {
 a {
   color: white;
   text-decoration: none;
-  text-shadow: 0em 0em 1em #d35400;
 }
 
 a:hover {
