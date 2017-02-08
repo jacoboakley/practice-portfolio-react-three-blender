@@ -17,7 +17,9 @@ class Skills extends React.Component {
   render() {
     return (
       <div className='skills'>
-        <p>Hello from our app</p>
+        <figure id='html'>a</figure>
+        <figure id='javascript'>b</figure>
+        <figure id='css'>c</figure>
       </div>
     )
   }

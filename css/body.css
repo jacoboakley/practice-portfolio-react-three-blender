@@ -30,9 +30,21 @@
 
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 
   background: green;
+}
+
+.skills > figure {
+  height: 50%;
+  width: 20%;
+
+  border: 2px solid white;
+  transition-duration: 2s;
+}
+
+.skills > figure:hover {
+  flex-grow: 2;
 }
 
 .gallery {
@@ -47,7 +59,13 @@
   justify-content: space-around;
 }
 
-.gallery iframe {
+.gallery > iframe {
   height: 40%;
   width: 40%;
+
+  transition-duration: 2s;
+}
+
+.gallery > iframe:hover {
+  transform: scale(1.25, 1.25);
 }
