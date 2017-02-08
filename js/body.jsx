@@ -14,12 +14,43 @@ class About extends React.Component {
 }
 
 class Skills extends React.Component {
+  constructor(props) {
+    super(props);
+
+  }
+
+  reveal(event) {
+    event.target.childNodes[1].style.visibility = 'visible';
+  }
+
+  hide(event) {
+    event.target.childNodes[1].style.visibility = 'hidden';
+  }
+
   render() {
     return (
       <div className='skills'>
-        <figure id='html'>a</figure>
-        <figure id='javascript'>b</figure>
-        <figure id='css'>c</figure>
+        <div onClick={this.reveal} onMouseOut={this.hide}>
+          <h1 id='html'>HTML</h1>
+          <ul>
+            <li>Bootstrap</li>
+            <li>Foundation</li>
+          </ul>
+        </div>
+        <div onMouseOver={this.reveal} onMouseOut={this.hide}>
+          <h1 id='javascript'>JavaScript</h1>
+          <ul>
+           <li>React</li>
+           <li>Node</li>
+           <li>Three.js</li>
+          </ul>
+        </div>
+        <div onMouseEnter={this.reveal} onMouseLeave={this.hide}>
+          <h1 id='css'>CSS</h1>
+          <ul>
+            <li>SASS</li>
+          </ul>
+        </div>
       </div>
     )
   }
