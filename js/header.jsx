@@ -27,10 +27,10 @@ class Header extends React.Component {
           <a href='#' onClick={this.slide} name='gallery'>Gallery</a>
         </div>
         <div className='links'>
-          <a href='https://twitter.com/jacoboakley21' target='_blank'>Stalk Me</a>
-          <a href='http://codepen.io/jacoboakley/' target='_blank'>Judge Me</a>
-          <a href='https://github.com/jacoboakley' target='_blank'>Copy Me</a>
-          <a href='https://www.linkedin.com/in/jacoboakley' target='_blank'>Hire Me</a>
+          <a href='https://twitter.com/jacoboakley21' target='_blank'><img src='assets/icons/twitter.png' /></a>
+          <a href='http://codepen.io/jacoboakley/' target='_blank'><img src='assets/icons/codepen.png' /></a>
+          <a href='https://github.com/jacoboakley' target='_blank'><img src='assets/icons/github.png' /></a>
+          <a href='https://www.linkedin.com/in/jacoboakley' target='_blank'><img src='assets/icons/linkedin.png' /></a>
       </div>
       </header>
     )
