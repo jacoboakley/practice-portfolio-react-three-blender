@@ -1,11 +1,25 @@
 .body {
   position: absolute;
-  top: 10%;
+  top: 0;
 
-  height: 85%;
+  height: 100%;
   width: 100%;
 
   transition-duration: 1s;
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+
+  background: url('https://static.pexels.com/photos/3129/laptop-notebook-grass-meadow.jpg');
+  background-size: 100% 100%;
 }
 
 .about {

@@ -1,5 +1,16 @@
 import React from 'react';
 
+class Home extends React.Component {
+  render() {
+    return (
+      <div className='home'>
+        <h1>Jacob Oakley</h1>
+        <h3>Frontend Web Developer</h3>
+      </div>
+    )
+  }
+}
+
 class About extends React.Component {
   render() {
     return (
@@ -65,6 +76,7 @@ class Body extends React.Component {
   render() {
     return (
       <div className='body'>
+        <Home />
         <About />
         <Skills />
         <Gallery />

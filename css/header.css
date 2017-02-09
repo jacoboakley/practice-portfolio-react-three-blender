@@ -1,24 +1,15 @@
 .header {
-  position: absolute;
+  position: fixed;
   z-index: 1;
 
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
-  height: 10%;
+  height: auto;
   width: 100%;
-
-  background: rgba(127, 140, 141, .5);
-  box-shadow: 0rem 0rem 1rem white;
-}
-
-.header p {
-  margin: 0;
-
-  font-weight: 700;
 }
 
 .header a {
-  padding: 1rem;
+  padding: .25rem;
 }

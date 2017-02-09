@@ -9,8 +9,7 @@ html, body {
   height: 100%;
   width: 100%;
 
-  background: rgba(44, 62, 80, 1);
-  color: white;
+  color: black;
   font-size: 3vmin;
 
   overflow: hidden;
@@ -26,7 +25,7 @@ html, body {
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
