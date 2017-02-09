@@ -59,14 +59,21 @@ class Gallery extends React.Component {
   render() {
     return (
       <div className='gallery'>
-        <iframe scrolling='no' title='Multiplayer football game' src='//codepen.io/jacoboakley/embed/WRpdXb/?height=265&theme-id=light&default-tab=result&embed-version=2&editable=true' frameBorder='no' allowTransparency='true' allowFullScreen='true'>See the Pen <a href='http://codepen.io/jacoboakley/pen/WRpdXb/'>Multiplayer football game</a> by Jacob Oakley (<a href='http://codepen.io/jacoboakley'>@jacoboakley</a>) on <a href='http://codepen.io'>CodePen</a>.
-        </iframe>
-        <iframe scrolling='no' title='Profile Card - React' src='//codepen.io/jacoboakley/embed/YpdGJd/?height=265&theme-id=light&default-tab=result&embed-version=2&editable=true' frameBorder='no' allowTransparency='true' allowFullScreen='true'>See the Pen <a href='http://codepen.io/jacoboakley/pen/YpdGJd/'>Profile Card - React</a> by Jacob Oakley (<a href='http://codepen.io/jacoboakley'>@jacoboakley</a>) on <a href='http://codepen.io'>CodePen</a>.
-        </iframe>
-        <iframe scrolling='no' title='React - Clock' src='//codepen.io/jacoboakley/embed/BQMVoB/?height=265&theme-id=light&default-tab=result&embed-version=2&editable=true' frameBorder='no' allowTransparency='true' allowFullScreen='true'>See the Pen <a href='http://codepen.io/jacoboakley/pen/BQMVoB/'>React - Clock</a> by Jacob Oakley (<a href='http://codepen.io/jacoboakley'>@jacoboakley</a>) on <a href='http://codepen.io'>CodePen</a>.
-        </iframe>
-        <iframe scrolling='no' title='Card Flip' src='//codepen.io/jacoboakley/embed/ZpRbqB/?height=265&theme-id=light&default-tab=result&embed-version=2&editable=true' frameBorder='no' allowTransparency='true' allowFullScreen='true'>See the Pen <a href='http://codepen.io/jacoboakley/pen/ZpRbqB/'>Card Flip</a> by Jacob Oakley (<a href='http://codepen.io/jacoboakley'>@jacoboakley</a>) on <a href='http://codepen.io'>CodePen</a>.
-        </iframe>
+      <aside className='left'>&laquo;</aside>
+      <div className='swipe'>
+          <iframe scrolling='no' title='Multiplayer football game' src='//codepen.io/jacoboakley/embed/WRpdXb/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true' frameBorder='no' allowTransparency='true' allowFullScreen='true'>See the Pen <a href='http://codepen.io/jacoboakley/pen/WRpdXb/'>Multiplayer football game</a> by Jacob Oakley (<a href='http://codepen.io/jacoboakley'>@jacoboakley</a>) on <a href='http://codepen.io'>CodePen</a>.
+          </iframe>
+          
+          <iframe scrolling='no' title='Profile Card - React' src='//codepen.io/jacoboakley/embed/YpdGJd/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true' frameBorder='no' allowTransparency='true' allowFullScreen='true'>See the Pen <a href='http://codepen.io/jacoboakley/pen/YpdGJd/'>Profile Card - React</a> by Jacob Oakley (<a href='http://codepen.io/jacoboakley'>@jacoboakley</a>) on <a href='http://codepen.io'>CodePen</a>.
+          </iframe>
+
+          <iframe scrolling='no' title='Card Flip' src='//codepen.io/jacoboakley/embed/ZpRbqB/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true' frameBorder='no' allowTransparency='true' allowFullScreen='true'>See the Pen <a href='http://codepen.io/jacoboakley/pen/ZpRbqB/'>Card Flip</a> by Jacob Oakley (<a href='http://codepen.io/jacoboakley'>@jacoboakley</a>) on <a href='http://codepen.io'>CodePen</a>.
+          </iframe>
+          
+          <iframe scrolling='no' title='React - Clock' src='//codepen.io/jacoboakley/embed/BQMVoB/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true' frameBorder='no' allowTransparency='true' allowFullScreen='true'>See the Pen <a href='http://codepen.io/jacoboakley/pen/BQMVoB/'>React - Clock</a> by Jacob Oakley (<a href='http://codepen.io/jacoboakley'>@jacoboakley</a>) on <a href='http://codepen.io'>CodePen</a>.
+          </iframe>
+      </div>
+      <aside className='right'>&raquo;</aside>
       </div>
     )
   }

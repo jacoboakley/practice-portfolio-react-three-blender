@@ -9,27 +9,10 @@ html, body {
   height: 100%;
   width: 100%;
 
-  color: black;
+  background: #34495e;
+  color: white;
   font-size: 3vmin;
 
   overflow: hidden;
 }
 
-.link {
-  display: flex;
-  list-style-type: none;
-}
-
-.link li {
-  padding: .75rem;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-a:hover {
-  color: blue;
-  text-decoration: underline;
-}

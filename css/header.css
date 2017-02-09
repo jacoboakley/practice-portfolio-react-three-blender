@@ -1,15 +1,40 @@
 .header {
   position: fixed;
+  top: .5rem;
   z-index: 1;
+
+  height: auto;
+  width: 100%;
 
   align-items: center;
   display: flex;
   justify-content: space-between;
+}
 
-  height: auto;
-  width: 100%;
+.jumpTo {
+  width: 50%;
+
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .header a {
-  padding: .25rem;
+  width: 25%;
+
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.header a:focus, a:hover {
+  border-radius: 5%;
+  text-shadow: .00rem -.05rem 0rem black,
+               -.02rem .02rem 0rem black,
+               -.05rem .05rem 0rem black,
+               -.07rem .07rem 0rem black,
+               -.10rem .10rem 0rem black,
+               -.12rem .12rem 0rem black;
 }
