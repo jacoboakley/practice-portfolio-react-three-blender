@@ -4,6 +4,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className='home'>
+        <img src='assets/images/self-holding-babies.jpg' />
         <h1>Jacob Oakley</h1>
         <h3>Frontend Web Developer</h3>
       </div>
