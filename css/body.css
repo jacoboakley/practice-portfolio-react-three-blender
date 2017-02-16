@@ -22,19 +22,20 @@
   background-size: 100% 100%;
 }
 
-.home h1, .home h3, .home h5 {
+.home h1, .home h3, .home p {
   margin: .5rem;
 
   width: 65%;
 
-  background: rgba(255, 255, 255, .2);
-  text-shadow: -.05rem -.05rem 0 #000,
-                .05rem -.05rem 0 #000,
-               -.05rem  .05rem 0 #000,
-                .05rem  .05rem 0 #000; 
+  color: rgba(255, 255, 255, 1);
+  text-shadow: -.07rem -.07rem 0 #000,
+                .07rem -.07rem 0 #000,
+               -.07rem  .07rem 0 #000,
+                .07rem  .07rem 0 #000; 
 }
 
-.home h5 {
+.home p {
+  font-weight: 600;
   text-align: justify;
 }
 
