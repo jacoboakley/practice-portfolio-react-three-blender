@@ -16,35 +16,27 @@
   display:flex;
   flex-direction: column;
   justify-content: center;
-  text-align: justify;
+  text-align: center;
 
   background: url('../assets/images/computer.jpeg');
   background-size: 100% 100%;
 }
 
-.home img {
-  height: 20%;
-  width: 20%;
+.home h1, .home h3, .home h5 {
+  margin: .5rem;
 
-  border-radius: 100%;
-// filter: sepia(100%);
+  width: 65%;
+
+  background: rgba(255, 255, 255, .2);
+  text-shadow: -.05rem -.05rem 0 #000,
+                .05rem -.05rem 0 #000,
+               -.05rem  .05rem 0 #000,
+                .05rem  .05rem 0 #000; 
 }
 
-.about {
-  height: 100%;
-  width: 100%;
-
-  align-items: center;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
+.home h5 {
   text-align: justify;
 }
-
-.about p {
-  width: 50%;
-}
-
 
 .skills {
   height: 100%;

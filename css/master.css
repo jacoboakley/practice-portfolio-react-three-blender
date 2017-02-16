@@ -11,8 +11,8 @@ html, body {
 
   background: #34495e;
   color: white;
+  font-family: 'courier';
   font-size: 3vmin;
 
   overflow: hidden;
 }
-

@@ -12,9 +12,8 @@ class Header extends React.Component {
     const body = document.querySelector('.body');
 
     checkName == 'home' ? body.style.top = '0' : 
-      checkName == 'about' ? body.style.top = '-100%' : 
-        checkName == 'skills' ? body.style.top = '-200%' : 
-          body.style.top = '-300%';
+      checkName == 'skills' ? body.style.top = '-100%' : 
+        body.style.top = '-200%'
     };
 
   render() {
@@ -22,11 +21,11 @@ class Header extends React.Component {
       <header className='header'>
         <div className='jumpTo'>
           <a href='#' onClick={this.slide} name='home'>Home</a>
-          <a href='#' onClick={this.slide} name='about'>About</a>
           <a href='#' onClick={this.slide} name='skills'>Skills</a>
           <a href='#' onClick={this.slide} name='gallery'>Gallery</a>
         </div>
         <div className='links'>
+          <a href='assets/other/resume.docx' download='resume' title='Download Résumé'><img src='assets/icons/document.png' /></a>
           <a href='https://twitter.com/jacoboakley21' target='_blank'><img src='assets/icons/twitter.png' /></a>
           <a href='http://codepen.io/jacoboakley/' target='_blank'><img src='assets/icons/codepen.png' /></a>
           <a href='https://github.com/jacoboakley' target='_blank'><img src='assets/icons/github.png' /></a>
