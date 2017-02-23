@@ -90,6 +90,8 @@
 }
 
 .swipe {
+  padding: 1rem;
+  
   height: 100%;
   width: 100%;
 
@@ -108,13 +110,20 @@
   transition-duration: 1s;
 }
 
-.left, .right {
-  height: 50%;
-  width: 10%;
+.arrow-left {
+  width: 0; 
+  height: 0; 
 
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent; 
+  border-right:2rem solid white; 
+}
 
-  background: rgba(0, 0, 0, .25);
+.arrow-right {
+  width: 0; 
+  height: 0; 
+
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  border-left: 2rem solid white;
 }

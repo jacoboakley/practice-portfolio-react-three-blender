@@ -53,7 +53,7 @@ class Gallery extends React.Component {
   render() {
     return (
       <div className='gallery'>
-      <aside className='left'>&laquo;</aside>
+      <aside className='arrow-left' />
       <div className='swipe'>
           <iframe scrolling='no' title='Multiplayer football game' src='//codepen.io/jacoboakley/embed/WRpdXb/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true' frameBorder='no' allowTransparency='true' allowFullScreen='true'>See the Pen <a href='http://codepen.io/jacoboakley/pen/WRpdXb/'>Multiplayer football game</a> by Jacob Oakley (<a href='http://codepen.io/jacoboakley'>@jacoboakley</a>) on <a href='http://codepen.io'>CodePen</a>.
           </iframe>
@@ -67,7 +67,7 @@ class Gallery extends React.Component {
           <iframe scrolling='no' title='React - Clock' src='//codepen.io/jacoboakley/embed/BQMVoB/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true' frameBorder='no' allowTransparency='true' allowFullScreen='true'>See the Pen <a href='http://codepen.io/jacoboakley/pen/BQMVoB/'>React - Clock</a> by Jacob Oakley (<a href='http://codepen.io/jacoboakley'>@jacoboakley</a>) on <a href='http://codepen.io'>CodePen</a>.
           </iframe>
       </div>
-      <aside className='right'>&raquo;</aside>
+      <aside className='arrow-right' />
       </div>
     )
   }

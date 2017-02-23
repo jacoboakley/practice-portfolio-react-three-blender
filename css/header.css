@@ -24,8 +24,8 @@
   width: 25%;
 
   color: white;
-  font-size: 1rem;
-  font-weight: 900;
+  font-size: 1.25rem;
+  font-weight: 800;
   text-decoration: none;
 
   transition-duration: 1s;
@@ -39,7 +39,7 @@
                -.07rem .07rem 0rem black,
                -.10rem .10rem 0rem black,
                -.12rem .12rem 0rem black;
-  transform: scale(1.5, 1.5);
+  transform: scale(1.25, 1.25);
 }
 
 .header .links img{
