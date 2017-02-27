@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 class Home extends React.Component {
   render() {
@@ -50,24 +51,48 @@ class Skills extends React.Component {
 }
 
 class Gallery extends React.Component {
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      images: [
+        '//codepen.io/jacoboakley/embed/WRpdXb/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true'
+      ],
+      items: [
+        '//codepen.io/jacoboakley/embed/WRpdXb/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true',
+        '//codepen.io/jacoboakley/embed/YpdGJd/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true',
+        '//codepen.io/jacoboakley/embed/ZpRbqB/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true',
+        '//codepen.io/jacoboakley/embed/BQMVoB/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true'
+      ],
+      count: 0,
+      direction: ''
+    };
+  }
+  
+  scrollRight() {
+    let newItems = this.state.images.slice();
+    newItems.splice(0, 1, this.state.items[this.state.count]);
+    this.state.count == this.state.items.length - 1 ? 
+      this.setState({images: newItems, count: 0, direction: 'right' }) : 
+        this.setState({images: newItems, count: this.state.count + 1, direction: 'right'});
+  };
+  
+  scrollLeft() {
+    let newItems = this.state.images.slice();
+    newItems.splice(0, 1, this.state.items[this.state.count]);
+    this.state.count == 0 ? 
+      this.setState({images: newItems, count: this.state.items.length - 1, direction: 'left' }) : 
+        this.setState({images: newItems, count: this.state.count -1, direction: 'left'});
+  };
+  
   render() {
-    return (
-      <div className='gallery'>
-      <aside className='arrow-left' />
-      <div className='swipe'>
-          <iframe scrolling='no' title='Multiplayer football game' src='//codepen.io/jacoboakley/embed/WRpdXb/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true' frameBorder='no' allowTransparency='true' allowFullScreen='true'>See the Pen <a href='http://codepen.io/jacoboakley/pen/WRpdXb/'>Multiplayer football game</a> by Jacob Oakley (<a href='http://codepen.io/jacoboakley'>@jacoboakley</a>) on <a href='http://codepen.io'>CodePen</a>.
-          </iframe>
-          
-          <iframe scrolling='no' title='Profile Card - React' src='//codepen.io/jacoboakley/embed/YpdGJd/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true' frameBorder='no' allowTransparency='true' allowFullScreen='true'>See the Pen <a href='http://codepen.io/jacoboakley/pen/YpdGJd/'>Profile Card - React</a> by Jacob Oakley (<a href='http://codepen.io/jacoboakley'>@jacoboakley</a>) on <a href='http://codepen.io'>CodePen</a>.
-          </iframe>
-
-          <iframe scrolling='no' title='Card Flip' src='//codepen.io/jacoboakley/embed/ZpRbqB/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true' frameBorder='no' allowTransparency='true' allowFullScreen='true'>See the Pen <a href='http://codepen.io/jacoboakley/pen/ZpRbqB/'>Card Flip</a> by Jacob Oakley (<a href='http://codepen.io/jacoboakley'>@jacoboakley</a>) on <a href='http://codepen.io'>CodePen</a>.
-          </iframe>
-          
-          <iframe scrolling='no' title='React - Clock' src='//codepen.io/jacoboakley/embed/BQMVoB/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true' frameBorder='no' allowTransparency='true' allowFullScreen='true'>See the Pen <a href='http://codepen.io/jacoboakley/pen/BQMVoB/'>React - Clock</a> by Jacob Oakley (<a href='http://codepen.io/jacoboakley'>@jacoboakley</a>) on <a href='http://codepen.io'>CodePen</a>.
-          </iframe>
-      </div>
-      <aside className='arrow-right' />
+    return(
+      <div id='slider'>
+        <aside onClick={this.scrollLeft.bind(this)} id='leftArrow' />
+        <ReactCSSTransitionGroup transitionName="slide" transitionEnterTimeout={2000} transitionLeaveTimeout={2000}>
+          <iframe key={this.state.images} id={this.state.direction} scrolling='no' src={this.state.images} frameBorder='no' allowTransparency='true' allowFullScreen='true' />
+        </ReactCSSTransitionGroup>
+        <aside onClick={this.scrollRight.bind(this)} id='rightArrow'/>
       </div>
     )
   }
