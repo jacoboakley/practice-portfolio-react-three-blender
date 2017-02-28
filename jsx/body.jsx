@@ -56,18 +56,22 @@ class Gallery extends React.Component {
     
     this.state = {
       images: [
-        '//codepen.io/jacoboakley/embed/WRpdXb/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true'
+        '//codepen.io/jacoboakley/embed/WRpdXb/?height=725&theme-id=dark&default-tab=result&embed-version=2&editable=true'
       ],
       items: [
-        '//codepen.io/jacoboakley/embed/WRpdXb/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true',
-        '//codepen.io/jacoboakley/embed/YpdGJd/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true',
-        '//codepen.io/jacoboakley/embed/ZpRbqB/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true',
-        '//codepen.io/jacoboakley/embed/BQMVoB/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true'
+        '//codepen.io/jacoboakley/embed/WRpdXb/?height=725&theme-id=dark&default-tab=result&embed-version=2&editable=true',
+        '//codepen.io/jacoboakley/embed/YpdGJd/?height=725&theme-id=dark&default-tab=result&embed-version=2&editable=true',
+        '//codepen.io/jacoboakley/embed/ZpRbqB/?height=725&theme-id=dark&default-tab=result&embed-version=2&editable=true',
+        '//codepen.io/jacoboakley/embed/BQMVoB/?height=725&theme-id=dark&default-tab=result&embed-version=2&editable=true',
+        '//codepen.io/jacoboakley/embed/XMJoNY/?height=725&theme-id=dark&default-tab=result&embed-version=2&editable=true',
+        '//codepen.io/jacoboakley/embed/zNBxOm/?height=725&theme-id=dark&default-tab=result&embed-version=2&editable=true'
       ]
     };
   }
   
- switch(event) {
+
+  
+ select(event) {
     let newItems = this.state.images.slice();
     newItems.splice(0, 1, this.state.items[event.target.dataset.value]);
       this.setState({images: newItems});
@@ -77,14 +81,17 @@ class Gallery extends React.Component {
     return(
       <div id='slider'>
         
-        <ReactCSSTransitionGroup transitionName="slide" transitionEnterTimeout={20000} transitionLeaveTimeout={20000}>
+        <ReactCSSTransitionGroup transitionName="slide" transitionEnterTimeout={2000} transitionLeaveTimeout={2000}>
           <iframe key={this.state.images} scrolling='no' src={this.state.images} frameBorder='no' allowTransparency='true' allowFullScreen='true' />
         </ReactCSSTransitionGroup>
         
         <div id='selector'>
-          <a href='#' data-value='0' className='dot' onClick={this.switch.bind(this)}>1</a>
-          <a href='#' data-value='1' className='dot' onClick={this.switch.bind(this)}>2</a>
-          <a href='#' data-value='2' className='dot' onClick={this.switch.bind(this)}>3</a>
+          <a href='#'><img data-value='0' onClick={this.select.bind(this)} src='assets/images/football.PNG' /></a>
+          <a href='#'><img data-value='1' onClick={this.select.bind(this)} src='assets/images/reactProfileCard.PNG' /></a>
+          <a href='#'><img data-value='2' onClick={this.select.bind(this)} src='assets/images/cardFlip.PNG' /></a>
+          <a href='#'><img data-value='3' onClick={this.select.bind(this)} src='assets/images/reactClock.PNG' /></a>
+          <a href='#'><img data-value='4' onClick={this.select.bind(this)} src='assets/images/reactSlider.PNG' /></a>
+          <a href='#'><img data-value='5' onClick={this.select.bind(this)} src='assets/images/vetsWhoCode.PNG' /></a>
         </div>
         
       </div>
