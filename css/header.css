@@ -31,7 +31,7 @@
   transition-duration: 1s;
 }
 
-.header a:focus, a:hover {
+.header a:focus, .header a:hover {
   border-radius: 5%;
   text-shadow: .00rem -.05rem 0rem black,
                -.02rem .02rem 0rem black,

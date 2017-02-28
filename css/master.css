@@ -9,7 +9,8 @@ html, body {
   height: 100%;
   width: 100%;
 
-  background: #34495e;
+  background: url('../assets/images/computer.jpeg');
+  background-size: 100% 100%;
   color: white;
   font-family: 'courier';
   font-size: 3.25vmin;

@@ -63,36 +63,30 @@ class Gallery extends React.Component {
         '//codepen.io/jacoboakley/embed/YpdGJd/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true',
         '//codepen.io/jacoboakley/embed/ZpRbqB/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true',
         '//codepen.io/jacoboakley/embed/BQMVoB/?height=600&theme-id=dark&default-tab=result&embed-version=2&editable=true'
-      ],
-      count: 0,
-      direction: ''
+      ]
     };
   }
   
-  scrollRight() {
+ switch(event) {
     let newItems = this.state.images.slice();
-    newItems.splice(0, 1, this.state.items[this.state.count]);
-    this.state.count == this.state.items.length - 1 ? 
-      this.setState({images: newItems, count: 0, direction: 'right' }) : 
-        this.setState({images: newItems, count: this.state.count + 1, direction: 'right'});
-  };
-  
-  scrollLeft() {
-    let newItems = this.state.images.slice();
-    newItems.splice(0, 1, this.state.items[this.state.count]);
-    this.state.count == 0 ? 
-      this.setState({images: newItems, count: this.state.items.length - 1, direction: 'left' }) : 
-        this.setState({images: newItems, count: this.state.count -1, direction: 'left'});
-  };
+    newItems.splice(0, 1, this.state.items[event.target.dataset.value]);
+      this.setState({images: newItems});
+  }
   
   render() {
     return(
       <div id='slider'>
-        <aside onClick={this.scrollLeft.bind(this)} id='leftArrow' />
-        <ReactCSSTransitionGroup transitionName="slide" transitionEnterTimeout={2000} transitionLeaveTimeout={2000}>
-          <iframe key={this.state.images} id={this.state.direction} scrolling='no' src={this.state.images} frameBorder='no' allowTransparency='true' allowFullScreen='true' />
+        
+        <ReactCSSTransitionGroup transitionName="slide" transitionEnterTimeout={20000} transitionLeaveTimeout={20000}>
+          <iframe key={this.state.images} scrolling='no' src={this.state.images} frameBorder='no' allowTransparency='true' allowFullScreen='true' />
         </ReactCSSTransitionGroup>
-        <aside onClick={this.scrollRight.bind(this)} id='rightArrow'/>
+        
+        <div id='selector'>
+          <a href='#' data-value='0' className='dot' onClick={this.switch.bind(this)}>1</a>
+          <a href='#' data-value='1' className='dot' onClick={this.switch.bind(this)}>2</a>
+          <a href='#' data-value='2' className='dot' onClick={this.switch.bind(this)}>3</a>
+        </div>
+        
       </div>
     )
   }
