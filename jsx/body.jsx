@@ -81,7 +81,7 @@ class Gallery extends React.Component {
     return(
       <div id='slider'>
         
-        <ReactCSSTransitionGroup transitionName="slide" transitionEnterTimeout={2000} transitionLeaveTimeout={2000}>
+        <ReactCSSTransitionGroup id='slide-container' transitionName="slide" transitionEnterTimeout={2000} transitionLeaveTimeout={2000}>
           <iframe key={this.state.images} scrolling='no' src={this.state.images} frameBorder='no' allowTransparency='true' allowFullScreen='true' />
         </ReactCSSTransitionGroup>
         
