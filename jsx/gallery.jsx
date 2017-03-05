@@ -5,7 +5,7 @@ class Gallery extends React.Component {
     return (
        <div id='gallery'>
          <section className='box'>
-           <img src='assets/images/football.png' />
+           <img src='assets/images/football.jpeg' />
            <p className='text'>Two player football game created with JavaScript. <br /><a href='http://codepen.io/jacoboakley/pen/WRpdXb' target="_blank">View Code</a></p>
            <div className='shadow'></div>
          </section>
@@ -17,19 +17,19 @@ class Gallery extends React.Component {
          </section>
         
          <section className='box'>
-           <img src='assets/images/reactClock.png' />
+           <img src='assets/images/reactClock.jpeg' />
            <p className='text'>Clock using React<br /><a href='http://codepen.io/jacoboakley/pen/BQMVoB' target="_blank">View Code</a></p>
            <div className='shadow'></div>
          </section>
         
          <section className='box'> 
-           <img src='assets/images/reactSlider.png' />
+           <img src='assets/images/reactSlider.jpeg' />
            <p className='text'>Image slider using React. <br /><a href='http://codepen.io/jacoboakley/pen/XMJoNY' target="_blank">View Code</a></p>
            <div className='shadow'></div>
          </section>
          
          <section className='box'> 
-           <img src='assets/images/vetsWhoCode.png' />
+           <img src='assets/images/vetsWhoCode.jpeg' />
            <p className='text'>Vets Who Code symbol created using blender and imported using Three.js. <br /><a href='http://codepen.io/jacoboakley/pen/zNBxOm' target="_blank">View Code</a></p>
            <div className='shadow'></div>
          </section>
