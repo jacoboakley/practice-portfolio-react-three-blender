@@ -1,15 +1,30 @@
-.footer {
-  position: absolute;
-  top: 95%;
+#selector {
+  position: fixed;
+  top: 90%;
   z-index: 1;
 
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 
-  height: 5%;
+  height: 10%;
   width: 100%;
+}
 
-  background: rgba(127, 140, 141, .5);
-  box-shadow: 0rem 0rem 1rem white;
+#selector a {
+  margin: 0 1rem 0 1rem;
+
+  height: 1rem;
+  width: 1rem;
+
+  background: rgba(127, 140, 141, .25);
+  border: .05rem solid rgba(127, 140, 141, .25);
+  border-radius: 50%;
+  
+  transition-duration: 1000ms;
+}
+
+#selector a:hover, #selector a:focus {
+  transform: scale(1.5, 1.5);
+  border: .05rem solid rgba(0, 0, 0, 1);
 }

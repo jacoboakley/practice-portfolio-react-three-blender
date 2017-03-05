@@ -1,0 +1,29 @@
+#home {
+  position: absolute;
+
+  height: 90%;
+  width: 100%;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#home h1, #home h3, #home p {
+  margin: .5rem;
+
+  width: 65%;
+
+  color: rgba(255, 255, 255, 1);
+  text-shadow: -.07rem -.07rem 0 rgba(0, 0, 0, 1),
+                .07rem -.07rem 0 rgba(0, 0, 0, 1),
+               -.07rem  .07rem 0 rgba(0, 0, 0, 1),
+                .07rem  .07rem 0 rgba(0, 0, 0, 1);
+}
+
+#home p {
+  font-weight: 600;
+  text-align: justify;
+}

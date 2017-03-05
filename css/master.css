@@ -1,6 +1,8 @@
-@import url(header.css);
+@import url(home.css);
+@import url(skills.css);
+@import url(gallery.css);
+@import url(connect.css);
 @import url(footer.css);
-@import url(body.css);
 
 html, body {
   margin: 0;
@@ -14,6 +16,32 @@ html, body {
   color: white;
   font-family: 'courier';
   font-size: 3.25vmin;
+}
 
-  overflow: hidden;
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+/* Side Animation */
+.slide-leave {
+  opacity: 1;
+  transform: scale(1,1);
+}
+
+.slide-leave-active {
+  opacity: 0.01;
+  transform: scale(0,0);
+  transition: all 2000ms ease-in;
+}
+
+.slide-enter {
+  opacity: 0.01;
+  transform: scale(0,0);
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transform: scale(1,1);
+  transition: all 2000ms ease-in;
 }

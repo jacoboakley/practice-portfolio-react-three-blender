@@ -1,0 +1,90 @@
+#gallery {
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+}
+
+#gallery {
+  height: 100%;
+  width: 100%;
+  
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box {
+  height: 10rem;
+  width: 10rem;
+  
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  
+  animation-direction: alternate;
+  animation-duration: 1.75s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: linear;
+}
+
+img {
+  position: absolute;
+  
+  height: 100%;
+  width: 100%;
+}
+
+.text {
+  font-weight: 800;
+  text-align: center;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.shadow {
+  position: absolute;
+  bottom: -30%;
+  
+  height: 2rem;
+  width: 7.5rem;
+  
+  animation-direction: alternate;
+  animation-duration: 1.75s;
+  animation-iteration-count: infinite;
+  animation-name: bounceShadow;
+  animation-timing-function: linear;
+  
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.box:hover, .box:hover > .shadow, .box:hover > .text  {
+  animation-play-state: paused;
+  visibility: visible;
+}
+
+.box:hover > img {
+  opacity: .5;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0rem);
+  }
+
+  to {
+    transform: translateY(-1rem);
+  }
+}
+
+@keyframes bounceShadow {
+  from {
+    transform: translateY(0rem) scale(1, 1) skewX(-40deg);
+  }
+
+  to {
+    transform: translateY(1rem) scale(1.25, 1.25) skewX(-5deg);
+  }
+}
