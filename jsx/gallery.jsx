@@ -11,7 +11,7 @@ class Gallery extends React.Component {
          </section>
         
          <section className='box'> 
-           <img src='assets/images/cardFlip.png' />
+           <img src='assets/images/cardFlip.jpeg' />
            <p className='text'>Card flip using front and backface. <br /><a href='http://codepen.io/jacoboakley/pen/ZpRbqB' target="_blank">View Code</a></p>
            <div className='shadow'></div>
          </section>
