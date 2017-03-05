@@ -2,7 +2,6 @@ import React from 'react';
 import Home from './home.jsx';
 import Skills from './skills.jsx';
 import Gallery from './gallery.jsx';
-import Connect from './connect.jsx';
 
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
@@ -15,7 +14,7 @@ class Footer extends React.Component {
         <Home />
       ],
       components: [
-        <Home />, <Skills />, <Gallery  />, <Connect />
+        <Home />, <Skills />, <Gallery  />
       ]
     };
   }
