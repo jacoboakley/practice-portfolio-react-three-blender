@@ -1,14 +1,20 @@
-#selector {
+#footer {
   position: fixed;
-  top: 90%;
+  bottom: 0;
   z-index: 1;
 
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 
   height: 10%;
   width: 100%;
+}
+
+#code, #selector, #social {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 #selector a {
@@ -28,3 +34,11 @@
   transform: scale(1.5, 1.5);
   border: .05rem solid rgba(0, 0, 0, 1);
 }
+
+#footer img {
+  margin: 0 1rem 0 1rem;
+
+  height: 1rem;
+  width: 1rem;
+}
+

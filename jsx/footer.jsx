@@ -1,6 +1,5 @@
 import React from 'react';
 import Home from './home.jsx';
-import Skills from './skills.jsx';
 import Gallery from './gallery.jsx';
 
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
@@ -14,7 +13,7 @@ class Footer extends React.Component {
         <Home />
       ],
       components: [
-        <Home />, <Skills />, <Gallery  />
+        <Home />, <Gallery  />
       ]
     };
   }
@@ -34,11 +33,21 @@ class Footer extends React.Component {
           {this.state.page}
         </ReactCSSTransitionGroup>
         
-        <div id='selector'>
+        <div id='footer'>
+          <div id='code'>
+            <img src='assets/icons/github.png' />
+            <img src='assets/icons/codepen.png' />
+            <img src='assets/icons/document.png' />
+          </div>
+          <div id='selector'>
           <a href='#'data-value='0' onClick={this.select.bind(this)} />
           <a href='#'data-value='1' onClick={this.select.bind(this)} />
-          <a href='#'data-value='2' onClick={this.select.bind(this)} />
-          <a href='#'data-value='3' onClick={this.select.bind(this)} />
+          </div>
+          <div id='social'>
+            <img src='assets/icons/twitter.png' />
+            <img src='assets/icons/medium.png' />
+            <img src='assets/icons/linkedin.png' />
+          </div>
         </div>
         
       </div>
