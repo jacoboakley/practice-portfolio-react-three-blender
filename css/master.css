@@ -14,11 +14,19 @@ html, body {
   color: white;
   font-family: 'courier';
   font-size: 3.25vmin;
+
+  overflow: hidden;
 }
 
 #app {
+  position: absolute;
+
   height: 100%;
   width: 100%;
+}
+
+video {
+  position: absolute;
 }
 
 /* Side Animation */
