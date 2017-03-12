@@ -9,8 +9,6 @@ html, body {
   height: 100%;
   width: 100%;
 
-  background: url('../assets/images/horizonOcean.jpeg');
-  background-size: 100% 100%;
   color: white;
   font-family: 'courier';
   font-size: 3.25vmin;
